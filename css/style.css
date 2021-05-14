@@ -1,9 +1,7 @@
-@import url('animations.css');
-
 :root {
   --header-color: #FFFFFF;
   --primary-bg-color: white;
-  ---uni-font-size: 16px;
+  --uni-font-size: 16px;
   --header-weights: 600;
   --link-color: #FFFFFF;
   --link-hover: #ff3333;
