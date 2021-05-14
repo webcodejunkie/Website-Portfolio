@@ -1,0 +1,138 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+hr {
+  width: 100%;
+}
+.border_me {
+  width: 420px;
+  border-radius: 1%;
+  border: 0.1px solid lightgray;
+  background-color: white;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.border_me:hover {
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform: translateY(3px);
+      -ms-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.card_imgHolder {
+  width: 419px;
+  height: 235px;
+}
+
+.work_cardInfo {
+  padding: 20px;
+  text-align: center;
+}
+
+.cardInfo {
+  padding: 25px;
+}
+
+.github_repButton {
+  font-family: var(--secondary-font);
+  font-size: 15px;
+  height: 38px;
+  width: 105px;
+  border-radius: .25rem;
+  border: 1px solid transparent;
+  background-color: #28a745;
+}
+
+.github_repButton:hover {
+  opacity: 75%;
+}
+
+.github_link {
+  color: white;
+}
+
+.github_pagButton {
+  font-family: var(--secondary-font);
+  font-size: 15px;
+  height: 38px;
+  width: 105px;
+  border-radius: .25rem;
+  border: 1px solid transparent;
+  background-color: #007bff;
+}
+
+.github_pagButton:hover {
+  opacity: 75%;
+}
+
+.one, .two, .four {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media all and (max-width: 500px) {
+  .work_grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    width: auto;
+  }
+  #nav_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 750px) {
+  .card_imgHolder {
+    width: 319px;
+  }
+
+  .border_me {
+    width: 320px;
+    margin: 0;
+  }
+  .header_titles {
+    margin: 0;
+  }
+  .mid_container {
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .work_grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    width: auto;
+  }
+
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+}
