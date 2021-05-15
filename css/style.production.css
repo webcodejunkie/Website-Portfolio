@@ -168,7 +168,7 @@ h2 {
 }
 
 .nav_links:focus {
-  color: #0080ff;
+  color: #0043ff;
   -webkit-transition-duration: 1s;
        -o-transition-duration: 1s;
           transition-duration: 1s;
