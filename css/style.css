@@ -1,18 +1,17 @@
 :root {
-  --header-color: #FFFFFF;
+  --header-color: white;
   --primary-bg-color: white;
   --uni-font-size: 16px;
   --header-weights: 600;
-  --link-color: #FFFFFF;
-  --link-hover: #ff3333;
+  --link-color: white;
+  --link-hover: #ff33;
   --link-active: #0080ff;
   --link-focus: #0080ff;
   --visited_links: #800055;
-  --webT:  #00ff55;
+  --webT: #00ff00;
   --primary-font: 'Press Start 2P', cursive;
   --secondary-font: 'Quicksand', sans-serif;
 }
-
 
 * {
   box-sizing: border-box;
@@ -47,7 +46,6 @@ h2 {
   font-family: var(--secondary-font);
   font-size: 18px;
 }
-
 
 .five, .four, .three, .two, .one {
   padding: 30px;
@@ -119,10 +117,9 @@ h2 {
   color: var(--link-color);
   display: flex;
   text-decoration: none;
-  padding: 0px 20px;
+  padding: 0 20px;
   font-weight: 600;
 }
-
 
 .nav_links:hover {
   color: var(--link-hover);
@@ -134,10 +131,9 @@ h2 {
   transform: translateY(3px);
 }
 
-
 .nav_links--active {
   color: var(--link-active);
-  border-bottom: 4px solid #FFFFFF;
+  border-bottom: 4px solid white;
 }
 
 a:visited {
@@ -206,7 +202,7 @@ a:visited {
 }
 
 .icon_brand {
-  padding: .5rem;
+  padding: 0.5rem;
   height: 60px;
   width: 55px;
 }
@@ -234,56 +230,70 @@ li {
   .mid_content_container {
     padding: 0;
   }
+
   .bubble_icon {
     width: 180px;
     height: 180px;
   }
+
   .container {
     position: absolute;
     padding: 15px 0;
   }
+
   body {
     font-size: 12px;
   }
+
   .under_title_header {
     font-size: 16px;
   }
+
   .title_space {
     padding: 13rem 0;
     margin-bottom: -7rem;
     clip-path: ellipse(82% 17%);
   }
+
   #titled_header {
     font-size: 28px;
     letter-spacing: 12px;
   }
+
   #nav_container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 0;
     grid-gap: 0;
   }
-  .one, .two, .three, .four, .five {
+
+  .one .two .three .four .five {
     padding: 15px;
     margin-top: 6rem;
   }
+
   .one {
     grid-column-start: 1;
   }
+
   .two {
     grid-row-start: 3;
   }
+
   .four {
     grid-column: span 5;
     grid-row: span 2;
   }
+
   .home_infoCard {
     align-items: center;
   }
+
   .home_container {
     padding: 0;
   }

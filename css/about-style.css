@@ -44,48 +44,50 @@
   font-size: var(--uni-font-size);
 }
 
-@media all and (min-width: 320px) and (max-width: 700px){
+@media all and (min-width: 320px) and (max-width: 700px) {
   .table_container {
     font-size: 9px;
   }
+
   .s_bio {
     font-size: 13px;
   }
+
   .one, .two, .three, .four, .five {
     padding: 1px;
   }
+
   .one {
     grid-row: span 2;
     grid-column: span 1;
   }
+
   .container {
     flex-direction: column;
     align-items: center;
   }
+
   #nav_container {
     flex-direction: column;
   }
+
   .video_container {
     padding: 0;
   }
+
   iframe {
     width: 320px;
   }
+
   h1 {
     font-size: 14px;
   }
-  h2 {
-
-  }
-  .header_titles {
-    padding: 0;
-    marging: 4rem 0;
-  }
 
   .Aboutmid_content {
-    padding: 2rem 0 2rem 0;
+    padding: 2rem;
     font-size: 14px;
   }
+
   .aboutme_info {
     padding: 0;
   }

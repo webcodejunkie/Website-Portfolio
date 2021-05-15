@@ -8,6 +8,7 @@
 hr {
   width: 100%;
 }
+
 .border_me {
   width: 420px;
   border-radius: 1%;
@@ -45,11 +46,9 @@ hr {
 }
 
 .github_repButton {
-  font-family: var(--secondary-font);
-  font-size: 15px;
-  height: 38px;
-  width: 105px;
-  border-radius: .25rem;
+  font-size: 12px;
+  border-radius: 0.25rem;
+  padding: 0.4rem;
   border: 1px solid transparent;
   background-color: #28a745;
 }
@@ -63,17 +62,27 @@ hr {
 }
 
 .github_pagButton {
-  font-family: var(--secondary-font);
-  font-size: 15px;
-  height: 38px;
-  width: 105px;
-  border-radius: .25rem;
+  font-size: 12px;
+  border-radius: 0.25rem;
+  padding: 0.4rem;
   border: 1px solid transparent;
   background-color: #007bff;
 }
 
 .github_pagButton:hover {
   opacity: 75%;
+}
+
+.button-collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .one, .two, .four {
@@ -90,6 +99,7 @@ hr {
     grid-template-columns: 1fr;
     width: auto;
   }
+
   #nav_container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -110,9 +120,7 @@ hr {
     width: 320px;
     margin: 0;
   }
-  .header_titles {
-    margin: 0;
-  }
+
   .mid_container {
     padding: 0;
   }
@@ -134,5 +142,4 @@ hr {
         -ms-flex-align: center;
             align-items: center;
   }
-
 }

@@ -5,7 +5,6 @@
   padding: 30px;
 }
 
-
 .contact_avatar {
   border-radius: 50%;
   box-shadow: 4px 4px 10px grey;
@@ -18,7 +17,6 @@
   background-image: linear-gradient(white 80%, blue 20%);
   border-radius: 2%;
   box-shadow: 8px 10px 8px grey;
-
 }
 
 #form_card {
@@ -43,34 +41,34 @@
   letter-spacing: 2px;
 }
 
-.learn_more {
+#learn_more {
+  color: white;
   background-color: #007bff;
   box-shadow: 1px 1px 10px grey;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   border: 1px solid transparent;
   width: 345px;
   height: 49px;
-  padding: .3rem;
+  padding: 0.3rem;
   margin: 1rem 0;
   opacity: 100%;
   transition-duration: 1s;
 }
 
-.learn_more > a {
+#learn_more > a {
   color: white;
 }
 
-.learn_more > a:hover {
+#learn_more > a:hover {
   cursor: pointer;
 }
 
-.learn_more:hover {
+#learn_more:hover {
   color: blue;
   opacity: 45%;
   transition-duration: 1s;
   cursor: pointer;
 }
-
 
 .learn_more_container {
   display: flex;
@@ -85,13 +83,12 @@
   text-align: center;
 }
 
-.learn_more_container > a {
-  font-size: 8px;
-
+.svg-art-link {
+  font-size: 10px;
 }
 
 .h3_contact {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 div > .personal_info > p > a {
@@ -126,15 +123,13 @@ hr {
   #contact_card {
     padding: 1.5rem 4px;
   }
+
   #form_card {
     width: 312px;
   }
-  .learn_more {
+
+  #learn_more {
     width: 245px;
     font-size: 12px;
-  }
-  .learn_more_container > a {
-    font-size: 8px;
-
   }
 }
