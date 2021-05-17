@@ -158,12 +158,12 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
-  padding: 0 20px;
+  padding: 1.25rem;
   font-weight: 600;
 }
 
 .nav_links:hover {
-  color: #ff33;
+  color: black;
 }
 
 .nav_links:focus {
@@ -179,6 +179,17 @@ h2 {
 .nav_links--active {
   color: #0080ff;
   border-bottom: 4px solid white;
+}
+
+.hover_change {
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+.hover_change:hover {
+  background-color: #0078ea;
+  opacity: 0.5;
+  transition-duration: 0.5s;
 }
 
 a:visited {
@@ -327,8 +338,8 @@ li {
   }
 
   .title_space {
-    padding: 13rem 0;
-    margin-bottom: -7rem;
+    padding: 26rem 0;
+    margin-bottom: -16rem;
     -webkit-clip-path: ellipse(82% 17%);
             clip-path: ellipse(82% 17%);
   }

@@ -2,6 +2,7 @@
   from {
     fill:  #ff8533;
   }
+
   to {
     fill: #ff0000;
   }
@@ -11,9 +12,11 @@
   0% {
     transform: rotate3d(1, 1, 1, 340deg);
   }
+
   50% {
     transform: rotate3d(1, 1, 1, 357deg);
   }
+
   100% {
     transform: rotate3d(1, 1, 1, 340deg);
   }
@@ -23,12 +26,28 @@
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(.985);
   }
+
   100% {
     transform: scale(1);
   }
+}
+
+@keyframes dropDownHeader {
+  from {
+    transform: translateY(-120px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animated-header {
+  animation: dropDownHeader 1.5s 1 alternate ease;
 }
 
 .rocketFire {
