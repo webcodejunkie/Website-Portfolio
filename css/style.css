@@ -3,13 +3,7 @@
   --primary-bg-color: white;
   --uni-font-size: 16px;
   --header-weights: 600;
-  --link-color: white;
-  --link-hover: #ff33;
-  --link-active: #0080ff;
-  --link-focus: #0043ff;
-  --visited_links: #800055;
-  --webT: #00ff00;
-  --primary-font: 'Press Start 2P', cursive;
+  --primary-font: 'Permanent Marker', cursive;
   --secondary-font: 'Quicksand', sans-serif;
 }
 
@@ -32,14 +26,6 @@ h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
   font-weight: var(--header-weights);
-}
-
-h1 {
-  font-size: 25px;
-}
-
-h2 {
-  font-size: 15px;
 }
 
 .all_small_text {
@@ -96,32 +82,32 @@ h2 {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  background-color: #0083ff;
-  flex-direction: row;
   padding: 30px;
   z-index: 99999;
-  position: fixed;
-  left: 0;
-  right: 0;
+  position: absolute;
+  width: 100%;
 }
 
 #nav_container {
   display: flex;
+  justify-content: space-between;
   font-size: 17px;
 }
 
 .nav_links {
-  color: var(--link-color);
-  display: flex;
+  background-color: #002bff;
+  border: 3px solid transparent;
+  border-radius: .25rem;
   text-decoration: none;
-  padding: 0 20px;
+  padding: 16px;
   font-weight: 600;
+  color: white;
+  transition: 1s;
 }
 
 .nav_links:hover {
-  color: var(--link-hover);
+  transition: 1s;
+  opacity: .8;
 }
 
 .nav_links:focus {
@@ -135,9 +121,6 @@ h2 {
   border-bottom: 4px solid white;
 }
 
-a:visited {
-  color: var(--visited_links);
-}
 
 .title_space {
   padding: 8rem 0;
@@ -217,6 +200,84 @@ a:visited {
   top: 8em;
   width: 329px;
 }
+
+.main-backset {
+  background-image: linear-gradient(to bottom, rgb(142 129 129 / 0%), rgb(6 6 6 / 82%)), url(../imgs/main-photo.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: .5s;
+}
+
+.background-move {
+  background-position: bottom;
+}
+
+.nameContainer {
+  position: absolute;
+  z-index: 999;
+  left: 22%;
+  top: 25%;
+  letter-spacing: 40px;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+}
+
+.nameContainerTwo {
+  position: absolute;
+  z-index: 999;
+  left: 18%;
+  top: 40%;
+  letter-spacing: 20px;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+}
+
+.nameContainerThree {
+  position: absolute;
+  z-index: 999;
+  left: 20%;
+  top: 52%;
+  letter-spacing: 20px;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+}
+
+.aboutMeContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftContent {
+  width: 50%;
+}
+
+.rightContent {
+  width: 50%;
+}
+
+
+
+.fadeIn {
+  transition-duration: 1s;
+  opacity: 1;
+}
+
 
 ul {
   font-family: 'Oxygen', sans-serif;
